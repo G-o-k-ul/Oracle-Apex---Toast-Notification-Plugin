@@ -53,14 +53,14 @@ plugin-1-toast-notification/
 ### Step 1 – Install PL/SQL Package
 Run the following in your Oracle schema (SQL*Plus / SQL Developer / SQLcl):
 ```sql
-@src/ace_toast_notification_pkg.sql
+@src/pkg_notification_plugin.sql
 ```
 
 ### Step 2 – Import Plugin into APEX
 1. Open your APEX application
 2. Go to **Shared Components → Plug-ins**
 3. Click **Import**
-4. Upload `src/dynamic_action_plugin_com_oracle_ace_toast_notification.sql`
+4. Upload `src/da_notification_plugin.sql`
 5. Click **Next → Install Plugin**
 
 ---
@@ -71,7 +71,7 @@ After importing, use the plugin in any **Dynamic Action**:
 
 1. Create or edit a Dynamic Action (e.g., on Button Click)
 2. Add a **True Action**
-3. Select Action: **Toast Notification [ACE]**
+3. Select Action: **Toast Notification**
 4. Configure attributes:
 
 | Attribute | Description | Example |
@@ -93,11 +93,15 @@ Employee &P1_ENAME. was updated successfully.
 
 | Success Toast | Error Toast |
 |---|---|
-| *(screenshot)* | *(screenshot)* |
+| *<img width="1361" height="224" alt="image" src="https://github.com/user-attachments/assets/8ee750f1-ae09-40f2-8d81-17d3fa7d4555" />
+* | *<img width="1354" height="272" alt="image" src="https://github.com/user-attachments/assets/da7d07fb-3222-4e98-9e43-04814d4c00be" />
+* |
 
 | Warning Toast | Info Toast |
 |---|---|
-| *(screenshot)* | *(screenshot)* |
+| *<img width="1365" height="204" alt="image" src="https://github.com/user-attachments/assets/9ea8be50-2b6e-4f1c-afa3-7e53f1ddc4a1" />
+* | *<img width="1365" height="183" alt="image" src="https://github.com/user-attachments/assets/0b333b53-22b6-4563-8168-799f35784e73" />
+* |
 
 ---
 
