@@ -36,13 +36,8 @@ Native APEX notifications are often tied to page submit/refresh cycles. This plu
 ```
 plugin-1-toast-notification/
 ├── src/
-│   ├── dynamic_action_plugin_com_oracle_ace_toast_notification.sql  ← Plugin definition
-│   ├── ace_toast_notification_pkg.sql                               ← PL/SQL Package
-│   └── ace_toast_notification.css                                   ← Stylesheet reference
-├── dist/
-│   └── install.sql                                                  ← Combined install script
-├── demo/
-│   └── demo_app_export.sql                                          ← Sample APEX app
+│   ├── da_notification_plugin.sql                                   ← Plugin definition
+│   ├── pkg_notification_plugin.sql                                  ← PL/SQL Package
 └── README.md
 ```
 
